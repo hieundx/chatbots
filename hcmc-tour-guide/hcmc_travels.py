@@ -1,21 +1,13 @@
-from typing import List
-
-from fastapi import FastAPI
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.tools.retriever import create_retriever_tool
-from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_openai import ChatOpenAI
 from langchain import hub
 from langchain.agents import create_openai_functions_agent
 from langchain.agents import AgentExecutor
-from langchain.pydantic_v1 import BaseModel, Field
-from langchain_core.messages import BaseMessage
-from langserve import add_routes
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

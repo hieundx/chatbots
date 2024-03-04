@@ -1,7 +1,7 @@
 import streamlit as st
 from hcmc_travels import agent_executor
 
-st.title('🦜🔗 Quickstart App')
+st.title('HCMC Tour Guide Chatbot')
 
 def generate_response(input_text):
     response = agent_executor.invoke({
