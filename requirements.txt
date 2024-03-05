@@ -5,3 +5,5 @@ langchain-community
 langchain-core
 python-dotenv
 beautifulsoup4
+faiss-cpu
+faiss-gpu
